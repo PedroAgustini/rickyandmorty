@@ -1,0 +1,224 @@
+/*********** Universal *************/
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #1e183d;
+  color: white;
+}
+
+.font-size-small {
+  font-size: 13px;
+}
+
+.font-size-md {
+  font-size: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+input:focus {
+  outline: 0 none;
+}
+
+.padding-primary {
+  padding: .5rem 0rem;
+}
+
+.margin-top-primary {
+  margin-top: .8rem;
+}
+
+.color-gray {
+  color: #a5adaf;
+}
+
+.background-primary {
+  background: #1e183d;
+}
+
+.background-secundary {
+  background-color:#34296D;
+}
+
+.font-weight-none {
+  font-weight: 400;
+}
+/************* Header ***************/
+
+#header {
+  position: relative;
+}
+
+.header-img img {
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+}
+
+.header-input {
+  display: flex;
+  justify-content: center;
+}
+
+#input-search {
+  position: absolute;
+  bottom: 0;
+  width: 13rem;
+  padding: .50rem .70rem;
+  border-radius: .2rem;
+  margin-bottom: .7rem;
+  border: 0;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-title {
+  position: absolute;
+  top: 0%;
+  max-width: 50%;
+}
+
+.loading {
+  margin: auto;
+  text-align: center;
+}
+
+/*********** Location **************/
+
+.location {
+  width: 8rem;
+  height: 5.5rem;
+  padding: 0rem .5rem;
+  text-align: center;
+}
+
+.location-flex {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/************* ResidentInfo ***********/
+
+.component-residentinfo {
+  margin: 2rem 0rem;
+}
+
+.residentinfo-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: auto;
+}
+
+.residentinfo {
+  width: 18rem;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: auto;
+}
+
+.residentinfo-img {
+  position: relative;
+  width: 100%;
+}
+
+.residentinfo-img img {
+  border-top-right-radius: 1rem;
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.name {
+  border-bottom: 1px solid #05292E;
+  padding-bottom: .5rem;
+  color: #02B1C8;
+}
+
+.residentinfo-status-flex {
+  display: flex;
+  gap: .6rem;
+  position: absolute;
+  top: 0;
+  margin-top: 1rem;
+  align-items: center;
+  padding: .2rem;
+  width: 9rem;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #34296de0;
+}
+
+.residentinfo-status-flex div {
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+}
+
+.residentinfo-info {
+  padding: 1rem;
+}
+
+.brown {
+  background: brown;
+}
+
+.green {
+  background: green;
+}
+
+.gray {
+  background: gray;
+}
+
+.generate-azar {
+}
+/************** Media query ***************/
+
+@media(min-width: 768px) {
+  /*************** Header ***************/
+
+  #input-search {
+    width: 30rem;
+    padding: .8rem;
+  }
+
+  .header-img img {
+    height: 17rem;
+  }
+
+  /**************** Location *****************/
+
+  .location {
+    padding: .5rem 1.5rem;
+  }
+
+  /************** ResidentInfo ******************/
+
+  .component-residentinfo {
+    margin: 2rem auto;
+  }
+
+  .residentinfo {
+    max-width: 90%;
+    height: 34rem;
+  }
+
+  .residentinfo-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+  }
+}
